@@ -1,0 +1,1 @@
+in this directory we will be creating our first C program. we will have an opportunity to create our first C program "hello world"
