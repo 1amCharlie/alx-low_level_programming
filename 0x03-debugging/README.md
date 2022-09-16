@@ -1,0 +1,1 @@
+in this project we will be covering dubugging in C.
