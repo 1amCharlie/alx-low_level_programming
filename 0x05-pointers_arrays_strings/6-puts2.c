@@ -1,4 +1,4 @@
-#tdio.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -6,6 +6,7 @@
  * @str: string to print the chars from
  * Return: Always 0
  */
+
 void puts2(char *str)
 {
 int i = 0;
