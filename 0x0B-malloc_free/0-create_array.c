@@ -7,7 +7,7 @@
  * @b: amount of bytes
  * Return: pointer to the allocated memory
  */
-void *malloc_checked(unsigned int b)
+void *create_array(unsigned int b)
 {
 char *p;
 p = malloc(b);
