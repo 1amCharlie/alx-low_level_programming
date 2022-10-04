@@ -1,16 +1,16 @@
-#include <stdlib.h>
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- **malloc_checked - that creates an array of chars,
+ * create_array - creates an array of chars,
  * and initializes it with a specific char.
- * @size: array size.
- * @b: char variable
- * Return: pointer to the allocated memory
+ *@size: array size
+ *@c: character
+ * Return: a pointer to the array, or NULL if it fails
  */
-void *create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
-  
 char *array = NULL;
 unsigned int i;
 
@@ -27,3 +27,4 @@ array[i] = c;
 }
 return (array);
 }
+
