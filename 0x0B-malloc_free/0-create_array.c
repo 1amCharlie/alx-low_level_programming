@@ -4,16 +4,26 @@
 /**
  **malloc_checked - that creates an array of chars,
  * and initializes it with a specific char.
- * @b: amount of bytes
+ * @size: array size.
+ * @b: char variable
  * Return: pointer to the allocated memory
  */
-void *create_array(unsigned int b)
+void *create_array(unsigned int size, char c)
 {
-char *p;
-p = malloc(b);
+  
+char *array = NULL;
+unsigned int i;
 
-if(p == NULL)
-exit(98);
-
-return(p);
+if (size == 0)
+return (NULL);
+if (size != 0)
+{
+array = (char *)malloc(size * sizeof(char));
+if (array != NULL)
+{
+for (i = 0; i < size; i++)
+array[i] = c;
+}
+}
+return (array);
 }
